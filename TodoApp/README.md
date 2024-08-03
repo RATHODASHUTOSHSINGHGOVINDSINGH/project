@@ -11,5 +11,4 @@ A todo list application using ReactJS and Tailwind CSS.
 ## Usage
 Visit `http://localhost:3000` in your browser.
 
-## License
-MIT License
+ 
