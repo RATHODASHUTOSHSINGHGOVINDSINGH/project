@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="nav">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#"> About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1>Login form</h1>
+    <fieldset>
+      <form id="login-form" action="./thank.html" method="post">
+        <div>
+          <label for="name">Name</label><br />
+          <input
+            type="text"
+            name="name"
+            id="name" placeholder="Enter your name"
+          /><br />
+        </div>
+        <label for="email">Email</label><br />
+        <input type="email" name="email" id="email" /><br />
+        <label for="password">Password</label><br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter your password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one number, one uppercase, and one lowercase letter"
+        /><br />
+        <span>Gender</span><br />
+        <input type="radio" name="gender" value="Male" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="Female" id="female" />
+        <label for="female">Female</label><br />
+        <label for="dob">Date of Birth</label><br />
+        <input type="date" name="dob" id="dob" /><br />
+        <span>Favorite Programming Language</span><br />
+        <input type="checkbox" id="html" name="html" />
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="css" />
+        <label for="css">CSS</label>
+        <input type="checkbox" id="javascript" name="javascript" />
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" id="react" name="react" />
+        <label for="react">React</label>
+        <input type="checkbox" id="c" name="c" />
+        <label for="c">C</label>
+        <input type="checkbox" id="cpp" name="cpp" />
+        <label for="cpp">C++</label><br />
+        <label for="file">Choose file</label><br />
+        <input type="file" name="file" id="file" /><br />
+        <label for="city">Select city:</label>
+        <input list="cities" id="city" name="city" placeholder="Select city" />
+        <datalist id="cities">
+          <option value="Ahmedabad">Ahmedabad</option>
+          <option value="Surat">Surat</option></datalist
+        ><br /><br />
+
+        <button class="submit-btn" type="submit">Login</button>
+      </form>
+    </fieldset>
+
+    <footer class="footer">&copy; Login Form 2024</footer>
+   <script src="script.js"></script>
+  </body>
+</html>
